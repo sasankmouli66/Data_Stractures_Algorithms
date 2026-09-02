@@ -11,11 +11,11 @@ public class Movie {
 		this.ticket_Price = ticket_Price;	
 	}
 
-	Movie(Movie s,String movie_Name, String language, double ticket_Price,String movie,String lag,double price) 
+	Movie(Movie m,String a,double b) 
 	{
-		this.movie_Name = movie;
-		this.language = lag;
-		this.ticket_Price = price;	
+		this.movie_Name = a;
+		this.language = m.language;
+		this.ticket_Price = b;	
 	}
 
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Movie {
 		Movie m = new Movie("Paradise","Telugu",600);
 		m.show();
 		
-		Movie m1 = new Movie("toxic","Telugu",700);
+		Movie m1 = new Movie(m,"Toxic",500);
 		m1.show();
 		
 	}
