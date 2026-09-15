@@ -44,10 +44,8 @@ public class Movie_ {
 					}
 					}
 					System.out.println(A);
-//					System.out.println(countSeats);
-//					System.out.println(seatPrice);
-					endGame_tickets_Cost = seatPrice;
-					total_seats = countSeats;
+					endGame_tickets_Cost += seatPrice;
+					total_seats += countSeats;
 					System.out.println("U can Continue Endgame Tickets Enter Yes & No");
 					sc.nextLine();
 					y = sc.nextLine();
@@ -83,10 +81,8 @@ public class Movie_ {
 					}
 					}
 					System.out.println(B);
-//					System.out.println(countSeats);
-//					System.out.println(seatPrice);
-					inception_tickets_Cost = seatPrice;
-					total_seats = countSeats;
+					inception_tickets_Cost += seatPrice;
+					total_seats += countSeats;
 					System.out.println("U can Continue Inception Tickets Enter Yes & No");
 					sc.nextLine();
 					y = sc.nextLine();
@@ -122,10 +118,8 @@ public class Movie_ {
 					}
 					}
 					System.out.println(C);
-//					System.out.println(countSeats);
-//					System.out.println(seatPrice);
-					interSeller_tickets_Cost = seatPrice;
-					total_seats = countSeats;
+					interSeller_tickets_Cost += seatPrice;
+					total_seats += countSeats;
 					
 					System.out.println("U can Continue Interseller Tickets Enter Yes & No");
 					sc.nextLine();
@@ -135,17 +129,17 @@ public class Movie_ {
 				System.out.println("Exist");
 			}
 			}
-			System.out.println("U can Continue  Tickets Enter Yes & No");
-			sc.nextLine();
+			System.out.println("U can Continue Tickets Enter Yes & No");
 			y = sc.nextLine();
-			
-		} while (y.equalsIgnoreCase("yes"));
+
+			} while (y.equalsIgnoreCase("yes"));
 		System.out.println("Exist");
-		System.out.println("Total Seats Interseller :"+total_seats);
+		System.out.println("Total Seats  :"+total_seats);
 		System.out.println("-------------------------------------------------");
 		System.out.println("Toatl Cost EndGame     :"+endGame_tickets_Cost);
 		System.out.println("Total Cost inception   :"+inception_tickets_Cost);
 		System.out.println("Total Cost Interseller :"+interSeller_tickets_Cost);
+		System.out.println("Total Movie tickets Amount:"+(endGame_tickets_Cost + inception_tickets_Cost + interSeller_tickets_Cost));
 		
 		sc.close();
 	}
