@@ -15,6 +15,12 @@ public class Length1 {
 	System.out.println(a.startsWith("H"));
 	
 	System.out.println(a.replace("H", "h"));
+	
+	System.out.println(a.trim());
+	
+	System.out.println(a.indexOf("r"));
+	
+	
 
 	}
 
